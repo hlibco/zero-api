@@ -1,0 +1,14 @@
+{
+  "watch": ["src", ".env", "tsconfig.json", "nodemon-debug.json"],
+  "ext": "ts",
+  "ignore": ["src/**/*.spec.ts"],
+  "delay": 0,
+  "env": {
+    "NODE_ENV": "development",
+    "DEBUG": "app:*",
+    "DEBUG_COLORS": true,
+    "DEBUG_DEPTH": 9
+  },
+  "exec": "node --inspect-brk -r ts-node/register",
+  "verbose": true
+}

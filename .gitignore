@@ -1,0 +1,20 @@
+# dependencies
+/node_modules
+
+# IDE
+/.idea
+/.awcache
+/.vscode
+
+# tests
+/coverage
+
+# build
+/dist
+
+# misc
+*.env
+*.log
+/.stryker-tmp
+/tmp
+/reports

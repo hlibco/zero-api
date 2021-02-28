@@ -1,0 +1,14 @@
+{
+  "watch": ["src", ".env", "nodemon.json", "tsconfig.json"],
+  "ext": "ts",
+  "ignore": [".git", "node_modules", "src/**/*.spec.ts"],
+  "delay": 0,
+  "env": {
+    "NODE_ENV": "development",
+    "DEBUG": "app:*",
+    "DEBUG_COLORS": true,
+    "DEBUG_DEPTH": 9
+  },
+  "exec": "node -r ts-node/register src/index.ts",
+  "verbose": true
+}
