@@ -11,7 +11,8 @@ async function requestListner(request, response) {
   const count = sum(10, 90)
   const data = {
     url: request.url,
-    message: `${count} great ideas on ${config.planet}`
+    message: `${count} great ideas on ${config.planet}`,
+    success: true
   }
 
   response.writeHead(200, {
