@@ -10,23 +10,20 @@ on:
     branches: [main]
 jobs:
   build:
-    name: Test
+    name: Build & Test
     runs-on: ubuntu-latest
-    strategy:
-      matrix:
-        node-version: [12.x]
-        # See supported Node.js release schedule at https://nodejs.org/en/about/releases/
+
     steps:
       - uses: actions/checkout@v2
-      - uses: borales/actions-yarn@v2.0.0
+      - name: Use Node.js
+        uses: actions/setup-node@v1
         with:
-          cmd: install # will run `yarn install` command
-      - uses: borales/actions-yarn@v2.0.0
-        with:
-          cmd: build
-      - uses: borales/actions-yarn@v2.0.0
-        with:
-          cmd: lint
-      - uses: borales/actions-yarn@v2.0.0
-        with:
-          cmd: test
+          node-version: '12.x'
+      - name: Install dependencies
+        run: yarn install
+      - name: Run build
+        run: yarn build
+      - name: Run lint
+        run: yarn lint
+      - name: Run tests
+        run: yarn test
