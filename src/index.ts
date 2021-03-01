@@ -12,7 +12,8 @@ async function requestListner(request, response) {
   const data = {
     url: request.url,
     message: `${count} great ideas on ${config.planet}`,
-    success: true
+    success: true,
+    timestamp: Date.now()
   }
   console.log({ data })
 
