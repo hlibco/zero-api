@@ -14,6 +14,7 @@ async function requestListner(request, response) {
     message: `${count} great ideas on ${config.planet}`,
     success: true
   }
+  console.log({ data })
 
   response.writeHead(200, {
     'Content-Type': 'application/json'
