@@ -4,7 +4,7 @@
 
 [![Deploy to DO](https://www.deploytodo.com/do-btn-blue.svg)](https://cloud.digitalocean.com/apps/new?repo=https://github.com/hlibco/api-zero/tree/main&refcode=5d01b66dae09)
 
-The `main` branch in this repository is protected. Pushes must be done to a feature branch and when status checks pass it can be merged into the main branch.
+> The `main` branch in this repository is protected. Pushes must be done to a feature branch and when status checks pass it can be merged into the main branch.
 
 ## Development
 
