@@ -3,6 +3,7 @@ spec:
   name: api-zero
   services:
     - build_command: yarn build
+    - run_command: node dist/index.js
       environment_slug: node-js
       git:
         branch: main
