@@ -2,6 +2,8 @@
 
 > This is a Basic TypeScript REST API with all the basic tools you need to keep your codebase sparkling while it grows.
 
+[![Deploy to DO](https://www.deploytodo.com/do-btn-blue.svg)](https://cloud.digitalocean.com/apps/new?repo=https://github.com/hlibco/api-zero/tree/main&refcode=5d01b66dae09)
+
 ## Development
 
 1. If you're using NVM to manage your Node installation/versions, run `nvm use` to use the Node version specified on `.nvmrc` file.
