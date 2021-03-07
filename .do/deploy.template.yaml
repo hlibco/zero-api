@@ -2,13 +2,11 @@
 spec:
   name: api-zero
   services:
-    - build_command: yarn build
-      run_command: node dist/index.js
-      environment_slug: node-js
-      git:
-        branch: main
-        repo_clone_url: https://github.com/hlibco/api-zero.git
-      envs:
-        - key: PLANET
-          value: 'Earth'
-      name: api-zero
+    environment_slug: node-js
+    git:
+      branch: main
+      repo_clone_url: https://github.com/hlibco/api-zero.git
+    envs:
+      - key: PLANET
+        value: 'Earth'
+    name: api-zero
