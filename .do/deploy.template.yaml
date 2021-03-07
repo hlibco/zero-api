@@ -3,7 +3,7 @@ spec:
   name: api-zero
   services:
     - build_command: yarn build
-      environment_slug: api
+      environment_slug: node-js
       git:
         branch: main
         repo_clone_url: https://github.com/hlibco/api-zero.git
